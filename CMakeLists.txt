@@ -10,7 +10,7 @@ include_directories(.)
 set_target_properties(crc PROPERTIES PUBLIC_HEADER crc.h)
 set_target_properties(crc PROPERTIES SOVERSION "1")
 
-install(TARGETS crc DESTINATION lib PUBLIC_HEADER DESTINATION inc COMPONENT dev)
+install(TARGETS crc DESTINATION lib PUBLIC_HEADER DESTINATION inc)
 
 ### Debian Package generation
 set(CPACK_GENERATOR "DEB")
